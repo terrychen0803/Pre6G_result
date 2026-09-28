@@ -1,0 +1,7 @@
+stage,model,deployment_valid_for_unmodified_workload,mape_percent,median_ape_percent,max_ape_percent,r2
+part1_source_baseline,log_source_ols,no: requires completed source baseline timing,4.210131598984398,3.57938967529251,11.973879103752342,0.9842950427576944
+part3_marker_aligned_full_profile,compact_gpu_ridge,no: marker-aligned and includes workload metadata,3.697502722172565,2.575973016728006,10.73598706739674,0.9914949000496458
+part6_marker_aligned_short_window,behavior_mean_duration_ridge,no: iteration window and duration are marker-aligned,3.7721895872959728,2.728737951552534,10.609604629845586,0.9911204800179272
+part8_primary_nested,nested_selected_deployment_ridge,yes,4.4978100548183635,2.683336424226293,23.193531125610633,0.9614346202799599
+part8_best_fixed_family_posthoc,period_behavior_quality_ridge,"yes, but family identified after outer evaluation",4.352928941495189,2.683336424226293,23.193531125610633,0.964408175683569
+part8_single_hardware_model_nested,nested_selected_deployment_ridge,yes for known devices; unseen-device validity untested,4.972177786601887,3.883106737500094,22.05738159524156,0.9679097518328472

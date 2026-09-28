@@ -1,0 +1,37 @@
+{
+  "detector_training_family": "YOLO26",
+  "external_evaluation_family": "Gemma 4 LoRA SFT",
+  "source_device": "RTX5090",
+  "adaptive_horizons_seconds": [
+    9,
+    12,
+    15
+  ],
+  "confidence_threshold": 0.4,
+  "configurations": [
+    {
+      "horizon_seconds": 9,
+      "configuration": "{\"bin_ms\": 1.0, \"tail_fraction\": 0.65}"
+    },
+    {
+      "horizon_seconds": 12,
+      "configuration": "{\"bin_ms\": 2.0, \"tail_fraction\": 0.5}"
+    },
+    {
+      "horizon_seconds": 15,
+      "configuration": "{\"bin_ms\": 1.0, \"tail_fraction\": 0.8}"
+    }
+  ],
+  "detector_inputs": [
+    "five timestamped GPU metric channels",
+    "capture horizon"
+  ],
+  "forbidden_inputs": [
+    "NVTX markers",
+    "callbacks",
+    "source baseline runtime",
+    "target baseline runtime",
+    "workload configuration metadata"
+  ],
+  "baseline_usage": "post-detection evaluation only"
+}

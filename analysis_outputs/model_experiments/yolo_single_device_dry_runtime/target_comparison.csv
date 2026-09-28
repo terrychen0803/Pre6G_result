@@ -1,0 +1,5 @@
+device_id,training_target,primary_nested_model,dry_runtime_mape_percent,overhead_mae_pp
+RTX4090,direct_log_dry_runtime,nested_selected_ridge,8.059013101048548,11.488468480792916
+RTX4090,direct_log_overhead_ratio,nested_selected_ridge,7.810242644032807,10.709293125556565
+RTX5090,direct_log_dry_runtime,nested_selected_ridge,3.208099478877011,5.8966094918977445
+RTX5090,direct_log_overhead_ratio,nested_selected_ridge,4.983377024148938,6.656410189604262

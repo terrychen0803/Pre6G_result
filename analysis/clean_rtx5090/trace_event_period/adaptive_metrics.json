@@ -1,0 +1,16 @@
+{
+  "profiles": 24,
+  "accepted": 24,
+  "coverage": 1.0,
+  "mean_emission_horizon_seconds": 9.375,
+  "median_emission_horizon_seconds": 9.0,
+  "prefix_mean_ape_percent": 0.3290655169784689,
+  "prefix_median_ape_percent": 0.2726946254087296,
+  "prefix_p90_ape_percent": 0.6263702313875339,
+  "prefix_max_ape_percent": 1.1464267968476705,
+  "prefix_within_10_percent": 1.0,
+  "full_mean_ape_percent": 0.559334645236485,
+  "full_median_ape_percent": 0.342236917697906,
+  "full_p90_ape_percent": 1.181186785985258,
+  "full_max_ape_percent": 3.815589343924688
+}

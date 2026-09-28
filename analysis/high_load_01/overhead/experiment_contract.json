@@ -1,0 +1,20 @@
+{
+  "profile_mode": "nsys_gpu_metrics_01",
+  "trace_profiles_used": false,
+  "runtime_target": "steady_window_total_ms",
+  "baseline_repeats": {
+    "clean": 3,
+    "high_load_01": 5
+  },
+  "load_match_features": [
+    "pre_gpu_util_mean",
+    "pre_gpu_util_std",
+    "pre_gpu_util_min",
+    "pre_gpu_util_max",
+    "pre_gpu_mem_used_mean",
+    "pre_gpu_power_mean"
+  ],
+  "load_match_scaling": "global high-load IQR, fallback to standard deviation",
+  "load_match_distance": "root mean squared standardized distance",
+  "raw_data_modified": false
+}

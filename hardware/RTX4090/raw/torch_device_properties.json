@@ -1,0 +1,7 @@
+{
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "compute_capability": "8.9",
+  "sm_count": 128,
+  "cuda_visible_memory_bytes": 25241190400,
+  "cuda_visible_memory_gib": 23.5076904296875
+}

@@ -1,0 +1,11 @@
+{
+  "family": "gemma",
+  "profiles": 18,
+  "cuda_event_branch": 0,
+  "gpu_metric_branch": 18,
+  "mean_audit_gap_percent": 12.873001485715365,
+  "median_audit_gap_percent": 4.448219629958565,
+  "p90_audit_gap_percent": 32.80431585835159,
+  "max_audit_gap_percent": 33.46720593698676,
+  "within_10_percent": 0.5555555555555556
+}

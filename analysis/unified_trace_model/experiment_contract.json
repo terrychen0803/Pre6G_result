@@ -1,0 +1,53 @@
+{
+  "program": "run_unified_trace_model.py",
+  "program_sha256": "a822c2f2fcebedc2443dc7e353dd7a236d0803ede16d8fdbaba5524c38fc009e",
+  "conditions": [
+    "clean",
+    "high_load_01"
+  ],
+  "device": "RTX5090",
+  "outer_split": "leave one workload out; both condition rows excluded for mixed experiments",
+  "inner_split": "leave one workload out within outer training data",
+  "trace_features": [
+    "log_detected_period_ms",
+    "log_kernel_event_rate_hz",
+    "log_unique_kernel_count",
+    "log_median_kernel_duration_us",
+    "log_mean_kernel_duration_us",
+    "log_kernel_busy_fraction",
+    "anchor_robust_cv"
+  ],
+  "load_flag_ablation": true,
+  "load_interaction_ablation": true,
+  "trace_regime_moe": "nearest standardized trace-feature centroid selects a condition-specific expert",
+  "trace_soft_regime_interactions": {
+    "gate": "soft distance to trace-feature regime centroids",
+    "temperature_candidates": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "temperature_selection": "nested grouped leave-one-workload-out"
+  },
+  "pre_run_telemetry_features": [
+    "pre_gpu_utilpct",
+    "pre_gpu_mem_usedmb",
+    "pre_gpu_powerw",
+    "pre_cpu_userpct",
+    "pre_cpu_systempct",
+    "pre_load_1min"
+  ],
+  "clean_pre_run_telemetry": "not collected; fold-local median imputation plus missing indicators",
+  "forbidden_features": [
+    "NVTX",
+    "iterations.csv",
+    "workload configuration",
+    "batch size",
+    "image size",
+    "AMP",
+    "GPU metrics",
+    "during-run Netdata"
+  ],
+  "target": "condition-specific median unprofiled steady_window_mean_iter_ms"
+}

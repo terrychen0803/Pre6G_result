@@ -1,0 +1,22 @@
+{
+  "task_class": "gpu_compute",
+  "workload_family": "vision_transformer",
+  "workload_name": "synthetic_vit_classification",
+  "framework": "pytorch",
+  "mode": "training",
+  "channels": 3,
+  "activation": "gelu",
+  "dropout": 0.0,
+  "attention_dropout": 0.0,
+  "normalization": "layer_norm",
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8,
+    "fused": false
+  },
+  "dataset_samples_per_image_size": 128,
+  "seed": 20260824
+}

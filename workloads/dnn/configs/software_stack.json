@@ -1,0 +1,12 @@
+{
+  "experiment_stack": "dnn-cross-hardware-v1",
+  "python_major_minor": "3.12",
+  "expected_versions": {
+    "torch": null,
+    "numpy": null
+  },
+  "required_tools": {
+    "nsight_systems_on_feature_device": true,
+    "hpctoolkit_optional": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "program": "run_trace_runtime_model.py",
+  "program_sha256": "fcb69595c551a464db60249357dd6f2a24bce8a4d30432855fc3d6d4f02e57c8",
+  "evaluation": "nested leave-one-workload-out",
+  "features": [
+    "log_detected_period_ms",
+    "log_kernel_event_rate_hz",
+    "log_unique_kernel_count",
+    "log_median_kernel_duration_us",
+    "log_mean_kernel_duration_us",
+    "log_kernel_busy_fraction",
+    "anchor_robust_cv"
+  ],
+  "forbidden_features": [
+    "NVTX",
+    "iterations.csv",
+    "workload ID or configuration",
+    "batch size",
+    "image size",
+    "AMP",
+    "GPU metrics",
+    "Netdata during-run metrics"
+  ],
+  "target": "median steady_window_mean_iter_ms across five high-load unprofiled baselines",
+  "ridge_alphas_selected_in_inner_loocv": [
+    0.1,
+    1.0,
+    10.0
+  ]
+}

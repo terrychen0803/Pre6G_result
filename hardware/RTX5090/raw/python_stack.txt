@@ -1,0 +1,4 @@
+Python: 3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:38:16) [GCC 14.3.0]
+PyTorch: 2.11.0+cu128
+PyTorch CUDA: 12.8
+Ultralytics: 8.4.104

@@ -1,0 +1,38 @@
+{
+  "program": "detect_multiscale_marker_free_cycles.py",
+  "new_detector": true,
+  "old_programs_modified": false,
+  "horizons_seconds": [
+    9,
+    12,
+    15
+  ],
+  "bin_factors": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "tail_fractions": [
+    0.5,
+    0.65,
+    0.8
+  ],
+  "minimum_period_ms": 15.0,
+  "absolute_maximum_period_ms": 1000.0,
+  "minimum_cycles_in_segment": 8.0,
+  "nine_second_acceptance_threshold": 0.9,
+  "confirmed_acceptance_threshold": 0.65,
+  "detector_inputs": [
+    "five timestamped GPU metric channels",
+    "horizon"
+  ],
+  "forbidden_detector_inputs": [
+    "NVTX markers",
+    "callbacks",
+    "baseline runtime",
+    "target runtime",
+    "workload metadata"
+  ],
+  "oracle_and_baseline_usage": "post-detection evaluation only"
+}

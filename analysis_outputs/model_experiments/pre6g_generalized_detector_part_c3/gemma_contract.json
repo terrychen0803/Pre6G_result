@@ -1,0 +1,26 @@
+{
+  "program": "detect_generalized_marker_free_cycles.py",
+  "code_sha256": "c04d0848daa51b739f893d7c4287c3f0f5e6ba23ab896d68aadaa1472b513955",
+  "family": "gemma",
+  "detector_inputs": [
+    "five GPU metric channels",
+    "CUDA kernel start timestamp",
+    "CUDA kernel short-name id"
+  ],
+  "forbidden_detector_inputs": [
+    "NVTX",
+    "callbacks",
+    "baseline runtime",
+    "target runtime",
+    "model/workload metadata"
+  ],
+  "event_bin_ms": 0.05,
+  "event_period_range_ms": [
+    0.2,
+    15.0
+  ],
+  "event_route_confidence": 0.75,
+  "event_route_prominence": 0.35,
+  "audit_label": "source_baseline_median_ms",
+  "audit_joined_after_blind_output": true
+}

@@ -1,0 +1,18 @@
+{
+  "clean_root": "RTX5090_yolo26_collection_20260817\\runs\\RTX5090",
+  "high_root": "high_load_01_RTX5090_20260923\\runs_loaded\\high_load_01\\RTX5090",
+  "included_run_types": [
+    "baseline",
+    "nsys_gpu_metrics_01"
+  ],
+  "excluded_run_types": [
+    "nsys_trace_01",
+    "nsys_gpu_metrics_01_nsys2024"
+  ],
+  "pre_window_seconds": 5.0,
+  "raw_data_modified": false,
+  "config_sha256": {
+    "clean": "11d5226d951c19992d38a365a8562ead3ed6614d4c790aab0c1e63c5e9757cd5",
+    "high_load_01": "11d5226d951c19992d38a365a8562ead3ed6614d4c790aab0c1e63c5e9757cd5"
+  }
+}

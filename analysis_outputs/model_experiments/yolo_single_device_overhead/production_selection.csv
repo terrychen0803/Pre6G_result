@@ -1,0 +1,3 @@
+device_id,profiler_mode,selected_feature_family,selected_alpha,grouped_cv_overhead_mae_pp,training_workloads,feature_count,model_path,example_input_path
+RTX4090,nsys_gpu_metrics,period_only_ridge,0.1,8.946583333203284,24,1,models\RTX4090_nsys_gpu_metrics_overhead_ridge.joblib,examples\RTX4090_nsys_gpu_metrics_example.csv
+RTX5090,nsys_gpu_metrics,behavior_only_ridge,1.0,4.769678030751523,24,83,models\RTX5090_nsys_gpu_metrics_overhead_ridge.joblib,examples\RTX5090_nsys_gpu_metrics_example.csv

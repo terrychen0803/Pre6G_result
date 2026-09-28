@@ -1,0 +1,11 @@
+{
+  "family": "yolo",
+  "profiles": 48,
+  "cuda_event_branch": 0,
+  "gpu_metric_branch": 48,
+  "mean_audit_gap_percent": 1.2632722562050078,
+  "median_audit_gap_percent": 0.9281227997164361,
+  "p90_audit_gap_percent": 2.8821505350077685,
+  "max_audit_gap_percent": 7.225905557788691,
+  "within_10_percent": 1.0
+}

@@ -1,0 +1,12 @@
+{
+  "family": "dnn",
+  "profiles": 18,
+  "evaluated_profiles": 18,
+  "cuda_event_branch": 18,
+  "gpu_metric_branch": 0,
+  "mean_audit_gap_percent": 44.968977972262934,
+  "median_audit_gap_percent": 23.04290645998809,
+  "p90_audit_gap_percent": 113.30344649379609,
+  "max_audit_gap_percent": 301.4556866462677,
+  "within_10_percent": 0.3888888888888889
+}

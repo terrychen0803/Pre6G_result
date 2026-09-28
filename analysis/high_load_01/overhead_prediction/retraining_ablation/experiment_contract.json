@@ -1,0 +1,18 @@
+{
+  "outer_split": "leave one workload out; remove both clean and high rows for held-out workload",
+  "test_domain": "held-out high_load_01 RTX5090",
+  "inner_selection": "five-fold GroupKFold by workload; choose Ridge alpha on high-load validation MAE",
+  "target": "log(profile runtime / five-baseline median runtime)",
+  "prediction_constraint": "overhead ratio >= 1.0",
+  "pre_run_features": [
+    "pre_gpu_util_mean",
+    "pre_gpu_util_std",
+    "pre_gpu_util_min",
+    "pre_gpu_util_max",
+    "pre_gpu_mem_used_mean",
+    "pre_gpu_power_mean"
+  ],
+  "clean_pre_run_features": "unavailable; fold-local median imputation plus missing indicators",
+  "trace_profiles_used": false,
+  "raw_data_modified": false
+}

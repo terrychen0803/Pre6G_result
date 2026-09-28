@@ -1,0 +1,11 @@
+source_path,role,approx_size_gb,in_git,publication_action
+analysis_cache,derived analysis cache and profiler exports,27.396,no,rebuild from raw collections
+RTX4090_yolo26_collection_20260817,RTX4090 YOLO26 raw collection,11.039,no,publish separately or describe with a file-level manifest
+RTX5090_yolo26_collection_20260817,RTX5090 YOLO26 raw collection,14.238,no,publish separately or describe with a file-level manifest
+RTX4090_hpctoolkit_postprocess,RTX4090 HPCToolkit derived database,0.628,no,rebuild from raw measurements
+RTX5090_hpctoolkit_postprocess,RTX5090 HPCToolkit derived database,0.628,no,rebuild from raw measurements
+high_load_01_RTX5090_20260923,RTX5090 high-load raw collection,1.644,no,keep analysis code and summarized results in Git
+NsightSystems-2026.4.1.191-3860507,third-party profiler distribution,1.539,no,download from NVIDIA
+Pre6G_4090_dnn_gemma_vit,RTX4090 DNN Gemma4 and ViT working tree,22.876,no,keep deduplicated source only
+Pre6G_5090_dnn_gemma_vit,RTX5090 DNN Gemma4 and ViT working tree,28.171,no,keep deduplicated source only
+

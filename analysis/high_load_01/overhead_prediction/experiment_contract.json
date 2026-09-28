@@ -1,0 +1,10 @@
+{
+  "model_path": "analysis_outputs/model_experiments/yolo_single_device_overhead/models/RTX5090_nsys_gpu_metrics_overhead_ridge.joblib",
+  "training_domain": "clean RTX5090",
+  "test_domain": "high_load_01 RTX5090",
+  "profile_mode": "nsys_gpu_metrics",
+  "trace_profiles_used": false,
+  "label_reference": "median of five high-load baselines",
+  "rejected_profile_policy": "excluded for deployment; forced only in separate diagnostic",
+  "raw_data_modified": false
+}

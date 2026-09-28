@@ -1,0 +1,42 @@
+{
+  "program": "evaluate_trace_event_periods.py",
+  "program_sha256": "d39aca02899be98e9acb6ae6146449a70476cdd452c3ce563e3f5b1b2c549b94",
+  "detector_inputs": [
+    "CUDA kernel start timestamp",
+    "CUDA kernel short-name ID"
+  ],
+  "forbidden_detector_inputs": [
+    "NVTX",
+    "iterations.csv",
+    "workload ID or configuration",
+    "baseline runtime",
+    "GPU metrics"
+  ],
+  "audit_inputs_joined_after_detection": [
+    "NVTX TRAIN_ITER start timestamps"
+  ],
+  "horizons_seconds": [
+    5,
+    7,
+    9,
+    12,
+    15,
+    20,
+    30
+  ],
+  "tail_fraction": 0.6,
+  "harmonic_rule": "prefer supported 2x cluster when primary is a half-period harmonic",
+  "deployment_policy": {
+    "horizons_seconds": [
+      7,
+      9,
+      12,
+      15,
+      20,
+      30
+    ],
+    "minimum_confidence": 0.6,
+    "two_window_relative_tolerance": 0.1,
+    "selection_uses_audit_labels": false
+  }
+}

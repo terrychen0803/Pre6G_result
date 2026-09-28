@@ -1,0 +1,3 @@
+device_id,n_profiles,n_accepted,coverage,mean_period_ape_percent,median_period_ape_percent,p90_period_ape_percent,max_period_ape_percent,within_10_percent,mean_emission_horizon_seconds
+RTX5090,24,24,1.0,24.471732845032765,17.33694305802839,52.0175461840795,80.65006146162442,0.25,9.0
+both_devices,24,24,1.0,24.471732845032765,17.33694305802839,52.0175461840795,80.65006146162442,0.25,9.0

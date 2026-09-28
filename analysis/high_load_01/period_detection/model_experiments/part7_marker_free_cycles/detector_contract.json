@@ -1,0 +1,20 @@
+{
+  "detector_inputs": [
+    "timestamped GPU metric values",
+    "capture horizon"
+  ],
+  "forbidden_detector_inputs": [
+    "iteration markers",
+    "training callbacks",
+    "baseline runtime",
+    "target runtime"
+  ],
+  "oracle_usage": "evaluation and training-fold parameter selection only",
+  "split": "outer leave-one-workload-out, holding both devices out",
+  "adaptive_horizons_seconds": [
+    9,
+    12,
+    15
+  ],
+  "confidence_threshold_selection": "inside each outer training fold; maximize coverage subject to all accepted training periods having <=10% APE"
+}

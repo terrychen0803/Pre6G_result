@@ -1,0 +1,4 @@
+horizon_seconds,configuration,training_profiles,training_mean_period_ape_percent,training_median_period_ape_percent,training_max_period_ape_percent
+9,"{""bin_ms"": 1.0, ""tail_fraction"": 0.65}",48,10.144049347539498,1.1254189481099226,104.44490482408196
+12,"{""bin_ms"": 2.0, ""tail_fraction"": 0.5}",29,1.0377357972879704,0.8276468401893236,4.317401683164074
+15,"{""bin_ms"": 1.0, ""tail_fraction"": 0.8}",20,0.931727821588067,0.5520156685879682,3.146258911900131

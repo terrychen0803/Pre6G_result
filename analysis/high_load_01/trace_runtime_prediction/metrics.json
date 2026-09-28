@@ -1,0 +1,21 @@
+{
+  "profiles": 24,
+  "baseline_mae_ms": 10.7972120377036,
+  "baseline_rmse_ms": 13.442424623549073,
+  "baseline_mape_percent": 7.4191085911904775,
+  "baseline_median_ape_percent": 6.872276859450935,
+  "baseline_p90_ape_percent": 12.308578387380567,
+  "baseline_max_ape_percent": 17.50080307128004,
+  "baseline_within_10_percent": 0.7916666666666666,
+  "overhead_mae_percentage_points": 8.081072642787074,
+  "overhead_p90_ae_percentage_points": 14.868501794315971,
+  "mean_baseline_repeat_cv_percent": 6.674894129332087,
+  "median_baseline_repeat_cv_percent": 5.9554582858436795,
+  "max_baseline_repeat_cv_percent": 13.836120914271344,
+  "observed_overhead_median_percent": 10.121034786234535,
+  "observed_overhead_min_percent": -15.554684862978474,
+  "observed_overhead_max_percent": 27.52746338217414,
+  "direct_period_baseline_mape_percent": 17.75635906571637,
+  "evaluation": "nested leave-one-workload-out",
+  "target": "median steady_window_mean_iter_ms across five high-load unprofiled baselines"
+}

@@ -1,0 +1,34 @@
+{
+  "workload_family": "yolo26",
+  "profiler_mode": "nsys_gpu_metrics",
+  "devices": {
+    "RTX4090": 24,
+    "RTX5090": 24
+  },
+  "deployment_inputs": [
+    "multiscale marker-free detected profiling period",
+    "marker-free GPU metric cycle behavior",
+    "detector quality fields"
+  ],
+  "label_only": [
+    "median of three unprofiled dry-run steady-window runtimes"
+  ],
+  "audit_only": [
+    "profiler steady-window runtime",
+    "observed overhead ratio"
+  ],
+  "excluded": [
+    "iteration markers",
+    "callbacks",
+    "batch size",
+    "image size",
+    "AMP flag",
+    "dry-run runtime at inference",
+    "profiler summary runtime at inference"
+  ],
+  "target": "log unprofiled dry-run iteration runtime in milliseconds",
+  "prediction_constraint": "0 < predicted dry runtime <= detected profiling period",
+  "outer_split": "leave one YOLO workload out within each device",
+  "inner_split": "five-fold grouped by workload",
+  "primary_metric": "dry-runtime MAPE"
+}

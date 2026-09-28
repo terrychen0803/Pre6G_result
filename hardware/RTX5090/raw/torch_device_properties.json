@@ -1,0 +1,7 @@
+{
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "compute_capability": "12.0",
+  "sm_count": 170,
+  "cuda_visible_memory_bytes": 33660010496,
+  "cuda_visible_memory_gib": 31.34832763671875
+}

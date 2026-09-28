@@ -1,0 +1,2 @@
+device_id,workload_id,profiler_mode,predicted_dry_runtime_ms,predicted_overhead_ratio,predicted_overhead_percent
+RTX4090,C01,nsys_gpu_metrics,31.250733651165387,1.4239665697685318,42.39665697685317

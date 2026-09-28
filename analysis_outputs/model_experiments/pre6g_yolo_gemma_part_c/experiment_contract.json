@@ -1,0 +1,30 @@
+{
+  "direction": "RTX5090_to_RTX4090",
+  "families": {
+    "yolo26": 24,
+    "gemma4": 16
+  },
+  "rows": 40,
+  "cycle_schema_columns": 93,
+  "deployment_feature_count": 98,
+  "deployment_inputs": [
+    "marker-free source GPU metric time series",
+    "marker-free detected source period and quality",
+    "source and target hardware descriptors"
+  ],
+  "label_only": [
+    "RTX4090 unprofiled baseline iteration runtime"
+  ],
+  "audit_only": [
+    "source baseline iteration runtime",
+    "workload family"
+  ],
+  "excluded": [
+    "NVTX markers",
+    "callbacks",
+    "workload configuration metadata",
+    "target profiling metrics",
+    "DNN",
+    "ViT"
+  ]
+}

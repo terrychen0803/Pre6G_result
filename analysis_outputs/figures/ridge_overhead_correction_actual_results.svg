@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#ffffff"/>
+<style>text{font-family:"Microsoft JhengHei","Noto Sans TC",Arial,sans-serif}.title{font-size:38px;font-weight:700;fill:#172033}.subtitle{font-size:17px;fill:#607184}.kicker{font-size:14px;font-weight:700;fill:#087f73;letter-spacing:1.5px}.panelTitle{font-size:20px;font-weight:700;fill:#172033}.body{font-size:16px;fill:#27364a}.small{font-size:13px;fill:#667789}.axis{font-size:12px;fill:#718296}.value{font-size:22px;font-weight:700}.cardValue{font-size:24px;font-weight:700;fill:#172033}.cardLabel{font-size:13px;fill:#667789}</style>
+<text x="74" y="55" class="kicker">PROFILING OVERHEAD CORRECTION · ACTUAL EXPERIMENT DATA</text>
+<text x="74" y="108" class="title">Ridge 修正後，dry-runtime 預測誤差下降 73–83%</text>
+<text x="74" y="142" class="subtitle">YOLO26 · Nsight GPU Metrics · 每張 GPU 24 個 held-out workloads · nested leave-one-workload-out</text>
+<rect x="74" y="165" width="650" height="88" rx="14" fill="#f4f7fa" stroke="#dce5ed"/>
+<rect x="74" y="165" width="7" height="88" rx="3" fill="#348fe2"/>
+<text x="98" y="196" class="panelTitle" fill="#348fe2">RTX4090</text>
+<text x="98" y="231" class="cardLabel">實際 profiling overhead</text>
+<text x="261" y="231" class="body">平均 <tspan font-weight="700">33.37%</tspan>　中位數 <tspan font-weight="700">38.86%</tspan>　修正模型 MAE <tspan font-weight="700" fill="#348fe2">10.71 pp</tspan></text>
+<rect x="790" y="165" width="650" height="88" rx="14" fill="#f4f7fa" stroke="#dce5ed"/>
+<rect x="790" y="165" width="7" height="88" rx="3" fill="#16a897"/>
+<text x="814" y="196" class="panelTitle" fill="#16a897">RTX5090</text>
+<text x="814" y="231" class="cardLabel">實際 profiling overhead</text>
+<text x="977" y="231" class="body">平均 <tspan font-weight="700">32.80%</tspan>　中位數 <tspan font-weight="700">40.71%</tspan>　修正模型 MAE <tspan font-weight="700" fill="#16a897">6.66 pp</tspan></text>
+<rect x="74" y="278" width="650" height="470" rx="18" fill="#fbfcfe" stroke="#dce5ed"/>
+<text x="102" y="318" class="panelTitle">平均 dry-runtime 誤差：修正前 vs 修正後</text>
+<text x="102" y="345" class="small">修正前：detected period 直接對 dry-run GT；修正後：nested-selected Ridge</text>
+<line x1="210.0" y1="382" x2="210.0" y2="682" stroke="#e2e8ef" stroke-width="1"/>
+<text x="210.0" y="706" class="axis" text-anchor="middle">0%</text>
+<line x1="338.6" y1="382" x2="338.6" y2="682" stroke="#e2e8ef" stroke-width="1"/>
+<text x="338.6" y="706" class="axis" text-anchor="middle">10%</text>
+<line x1="467.1" y1="382" x2="467.1" y2="682" stroke="#e2e8ef" stroke-width="1"/>
+<text x="467.1" y="706" class="axis" text-anchor="middle">20%</text>
+<line x1="595.7" y1="382" x2="595.7" y2="682" stroke="#e2e8ef" stroke-width="1"/>
+<text x="595.7" y="706" class="axis" text-anchor="middle">30%</text>
+<text x="102" y="461.0" class="panelTitle" fill="#348fe2">RTX4090</text>
+<line x1="310.4" y1="455.0" x2="586.9" y2="455.0" stroke="#aebbc8" stroke-width="7" stroke-linecap="round"/>
+<circle cx="586.9" cy="455.0" r="11" fill="#f59e0b"/><circle cx="310.4" cy="455.0" r="12" fill="#348fe2"/>
+<text x="586.9" y="431.0" class="small" text-anchor="middle">修正前 29.32%</text>
+<text x="310.4" y="492.0" class="small" text-anchor="middle">修正後 7.81%</text>
+<rect x="400.7" y="441.0" width="96" height="28" rx="14" fill="#348fe2" opacity="0.12"/>
+<text x="448.7" y="460.0" class="small" text-anchor="middle" font-weight="700" fill="#348fe2">−73%</text>
+<text x="102" y="591.0" class="panelTitle" fill="#16a897">RTX5090</text>
+<line x1="274.1" y1="585.0" x2="579.7" y2="585.0" stroke="#aebbc8" stroke-width="7" stroke-linecap="round"/>
+<circle cx="579.7" cy="585.0" r="11" fill="#f59e0b"/><circle cx="274.1" cy="585.0" r="12" fill="#16a897"/>
+<text x="579.7" y="561.0" class="small" text-anchor="middle">修正前 28.75%</text>
+<text x="274.1" y="622.0" class="small" text-anchor="middle">修正後 4.98%</text>
+<rect x="378.9" y="571.0" width="96" height="28" rx="14" fill="#16a897" opacity="0.12"/>
+<text x="426.9" y="590.0" class="small" text-anchor="middle" font-weight="700" fill="#16a897">−83%</text>
+<circle cx="114" cy="728" r="6" fill="#f59e0b"/><text x="128" y="733" class="small">修正前</text><circle cx="210" cy="728" r="6" fill="#348fe2"/><text x="224" y="733" class="small">Ridge 修正後</text>
+<rect x="790" y="278" width="735" height="470" rx="18" fill="#fbfcfe" stroke="#dce5ed"/>
+<text x="818" y="318" class="panelTitle">逐 workload 誤差（48 組 OOF 預測）</text>
+<text x="818" y="345" class="small">40/48 個點位於改善區（對角線下方）</text>
+<line x1="870.0" y1="370" x2="870.0" y2="685" stroke="#e3e9ef"/>
+<line x1="870" y1="685.0" x2="1460" y2="685.0" stroke="#e3e9ef"/>
+<text x="870.0" y="706" class="axis" text-anchor="middle">0</text>
+<text x="850" y="689.0" class="axis" text-anchor="end">0</text>
+<line x1="1017.5" y1="370" x2="1017.5" y2="685" stroke="#e3e9ef"/>
+<line x1="870" y1="606.3" x2="1460" y2="606.3" stroke="#e3e9ef"/>
+<text x="1017.5" y="706" class="axis" text-anchor="middle">15</text>
+<text x="850" y="610.3" class="axis" text-anchor="end">15</text>
+<line x1="1165.0" y1="370" x2="1165.0" y2="685" stroke="#e3e9ef"/>
+<line x1="870" y1="527.5" x2="1460" y2="527.5" stroke="#e3e9ef"/>
+<text x="1165.0" y="706" class="axis" text-anchor="middle">30</text>
+<text x="850" y="531.5" class="axis" text-anchor="end">30</text>
+<line x1="1312.5" y1="370" x2="1312.5" y2="685" stroke="#e3e9ef"/>
+<line x1="870" y1="448.8" x2="1460" y2="448.8" stroke="#e3e9ef"/>
+<text x="1312.5" y="706" class="axis" text-anchor="middle">45</text>
+<text x="850" y="452.8" class="axis" text-anchor="end">45</text>
+<line x1="1460.0" y1="370" x2="1460.0" y2="685" stroke="#e3e9ef"/>
+<line x1="870" y1="370.0" x2="1460" y2="370.0" stroke="#e3e9ef"/>
+<text x="1460.0" y="706" class="axis" text-anchor="middle">60</text>
+<text x="850" y="374.0" class="axis" text-anchor="end">60</text>
+<path d="M 870 685 L 1460 370" stroke="#9caaba" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="1438" y="388" class="axis" text-anchor="end">無改善線 y = x</text>
+<circle cx="1331.9" cy="682.4" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C01: raw 46.97%, corrected 0.49%</title></circle>
+<circle cx="1322.8" cy="684.1" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C02: raw 46.05%, corrected 0.16%</title></circle>
+<circle cx="1253.5" cy="667.9" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C03: raw 39.00%, corrected 3.26%</title></circle>
+<circle cx="1086.2" cy="628.9" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C04: raw 21.99%, corrected 10.69%</title></circle>
+<circle cx="1234.1" cy="641.6" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C05: raw 37.03%, corrected 8.26%</title></circle>
+<circle cx="1303.2" cy="659.3" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C06: raw 44.06%, corrected 4.89%</title></circle>
+<circle cx="1034.7" cy="607.9" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C07: raw 16.75%, corrected 14.69%</title></circle>
+<circle cx="931.8" cy="642.3" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C08: raw 6.29%, corrected 8.13%</title></circle>
+<circle cx="1383.2" cy="622.0" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C09: raw 52.19%, corrected 12.01%</title></circle>
+<circle cx="1015.9" cy="605.5" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C10: raw 14.84%, corrected 15.14%</title></circle>
+<circle cx="959.1" cy="645.9" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C11: raw 9.06%, corrected 7.45%</title></circle>
+<circle cx="905.6" cy="666.0" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C12: raw 3.62%, corrected 3.62%</title></circle>
+<circle cx="1338.0" cy="659.2" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C13: raw 47.59%, corrected 4.91%</title></circle>
+<circle cx="1290.5" cy="677.6" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C14: raw 42.76%, corrected 1.41%</title></circle>
+<circle cx="1202.1" cy="664.8" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C15: raw 33.77%, corrected 3.85%</title></circle>
+<circle cx="1261.9" cy="632.2" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C16: raw 39.85%, corrected 10.06%</title></circle>
+<circle cx="1180.5" cy="607.7" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C17: raw 31.57%, corrected 14.73%</title></circle>
+<circle cx="1172.2" cy="656.7" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C18: raw 30.73%, corrected 5.38%</title></circle>
+<circle cx="1196.3" cy="676.7" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C19: raw 33.18%, corrected 1.57%</title></circle>
+<circle cx="912.9" cy="546.2" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C20: raw 4.36%, corrected 26.44%</title></circle>
+<circle cx="1411.8" cy="607.1" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C21: raw 55.10%, corrected 14.83%</title></circle>
+<circle cx="1102.9" cy="621.4" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C22: raw 23.69%, corrected 12.11%</title></circle>
+<circle cx="1069.0" cy="677.5" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C23: raw 20.23%, corrected 1.42%</title></circle>
+<circle cx="898.3" cy="674.9" r="6.2" fill="#348fe2" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX4090 C24: raw 2.88%, corrected 1.93%</title></circle>
+<circle cx="1240.2" cy="613.8" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C01: raw 37.64%, corrected 13.56%</title></circle>
+<circle cx="1287.7" cy="667.7" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C02: raw 42.48%, corrected 3.30%</title></circle>
+<circle cx="1224.2" cy="674.0" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C03: raw 36.02%, corrected 2.09%</title></circle>
+<circle cx="1040.1" cy="680.7" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C04: raw 17.30%, corrected 0.82%</title></circle>
+<circle cx="1338.4" cy="678.9" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C05: raw 47.63%, corrected 1.16%</title></circle>
+<circle cx="1303.1" cy="645.7" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C06: raw 44.04%, corrected 7.49%</title></circle>
+<circle cx="963.4" cy="613.6" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C07: raw 9.50%, corrected 13.60%</title></circle>
+<circle cx="916.3" cy="617.2" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C08: raw 4.71%, corrected 12.91%</title></circle>
+<circle cx="1229.8" cy="675.0" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C09: raw 36.59%, corrected 1.91%</title></circle>
+<circle cx="1087.6" cy="672.7" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C10: raw 22.13%, corrected 2.35%</title></circle>
+<circle cx="903.1" cy="659.6" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C11: raw 3.37%, corrected 4.83%</title></circle>
+<circle cx="900.9" cy="668.5" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C12: raw 3.14%, corrected 3.14%</title></circle>
+<circle cx="1311.3" cy="681.0" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C13: raw 44.87%, corrected 0.77%</title></circle>
+<circle cx="1300.6" cy="653.2" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C14: raw 43.79%, corrected 6.05%</title></circle>
+<circle cx="1307.5" cy="674.0" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C15: raw 44.49%, corrected 2.10%</title></circle>
+<circle cx="1200.0" cy="681.2" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C16: raw 33.56%, corrected 0.72%</title></circle>
+<circle cx="1321.0" cy="669.9" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C17: raw 45.86%, corrected 2.87%</title></circle>
+<circle cx="1261.0" cy="672.8" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C18: raw 39.76%, corrected 2.32%</title></circle>
+<circle cx="1167.1" cy="683.6" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C19: raw 30.22%, corrected 0.26%</title></circle>
+<circle cx="964.3" cy="652.6" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C20: raw 9.59%, corrected 6.18%</title></circle>
+<circle cx="1269.6" cy="647.1" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C21: raw 40.64%, corrected 7.22%</title></circle>
+<circle cx="1160.0" cy="637.9" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C22: raw 29.49%, corrected 8.97%</title></circle>
+<circle cx="1029.7" cy="639.2" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C23: raw 16.24%, corrected 8.72%</title></circle>
+<circle cx="938.7" cy="652.2" r="6.2" fill="#16a897" fill-opacity="0.82" stroke="#ffffff" stroke-width="1.5"><title>RTX5090 C24: raw 6.99%, corrected 6.25%</title></circle>
+<text x="1165" y="731" class="small" text-anchor="middle">修正前 APE (%)</text>
+<text x="808" y="530" class="small" text-anchor="middle" transform="rotate(-90 808 530)">修正後 APE (%)</text>
+<circle cx="1260" cy="715" r="6" fill="#348fe2"/><text x="1273" y="720" class="small">RTX4090</text><circle cx="1360" cy="715" r="6" fill="#16a897"/><text x="1373" y="720" class="small">RTX5090</text>
+<rect x="74" y="776" width="1451" height="70" rx="14" fill="#edf5f4" stroke="#d4e8e5"/>
+<circle cx="106" cy="811" r="7" fill="#087f73"/>
+<text x="128" y="817" class="body" font-weight="700">結論：直接使用 profiled period 會把約 33% 的量測 overhead 當成真實 runtime；Ridge 校正後，兩張 GPU 的平均誤差都降至 8% 以下。</text>
+<text x="1525" y="881" class="axis" text-anchor="end">Sources: samples.csv · metrics.csv · predictions.csv｜model: nested_selected_ridge</text>
+</svg>

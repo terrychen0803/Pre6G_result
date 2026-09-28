@@ -1,0 +1,13 @@
+{
+  "detector": "original Part 7 marker-free detector",
+  "training_domain": "clean RTX4090 + RTX5090 GPU-metrics profiles",
+  "test_domain": "high_load_01 RTX5090 GPU-metrics profiles",
+  "configuration_selection": "all clean profiles only",
+  "confidence_threshold_selection": "all clean profiles only",
+  "detector_inputs": [
+    "five GPU metric channels",
+    "capture horizon"
+  ],
+  "oracle_usage": "post-detection evaluation and clean-only hyperparameter selection",
+  "trace_profiles_used": false
+}

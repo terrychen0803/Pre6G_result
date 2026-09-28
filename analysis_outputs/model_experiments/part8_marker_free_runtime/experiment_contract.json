@@ -1,0 +1,22 @@
+{
+  "deployment_inputs": [
+    "marker-free source GPU metric time series",
+    "marker-free detected source period",
+    "source and target hardware descriptors"
+  ],
+  "label_only": [
+    "target unprofiled baseline iteration runtime"
+  ],
+  "excluded": [
+    "iteration markers",
+    "training callbacks",
+    "batch",
+    "image size",
+    "AMP flag",
+    "source baseline runtime",
+    "target profiling metrics"
+  ],
+  "outer_split": "leave one workload out on both devices",
+  "inner_split": "five-fold grouped by workload",
+  "oracle_models": "evaluation upper bounds only"
+}
