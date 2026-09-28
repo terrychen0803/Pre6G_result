@@ -1,3 +1,12 @@
+"""PRIMARY SCENARIO — Stage 1: marker-free period detection from CUDA trace events.
+
+This is the canonical detector for the main research/deployment scenario.
+Detector inputs are CUDA kernel timestamps and short-name IDs; NVTX is joined only
+after detection for offline audit and is not a detector feature.
+
+See PRIMARY_SCENARIO.md for the authoritative two-stage workflow.
+"""
+
 from __future__ import annotations
 
 import argparse

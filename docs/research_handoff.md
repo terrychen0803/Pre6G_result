@@ -1,5 +1,7 @@
 # YOLO26 跨異質 GPU Training Runtime Prediction：研究交接文件
 
+> **目前主要使用情境已更新：** 請優先閱讀 [`../PRIMARY_SCENARIO.md`](../PRIMARY_SCENARIO.md)。目前主線是 RTX 5090 clean/high-load 的 CUDA trace marker-free detector 與 unified runtime model；本文件中的跨 GPU Part 1–8 內容保留為研究演進、比較與延伸背景。
+
 更新日期：2026-08-20  
 原始工作區：YOLO26 runtime prediction research workspace
 

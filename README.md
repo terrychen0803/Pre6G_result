@@ -4,6 +4,17 @@
 
 研究主線是：僅使用來源 GPU 上短時間、marker-free 的 profiling 訊號，建立 workload behavior features，預測相同 workload 在另一張 GPU 上的 steady-state per-iteration runtime。
 
+## 主要使用情境（請優先閱讀）
+
+目前認定的主要成果是以下兩階段 trace pipeline：
+
+1. `analysis/high_load_01/evaluate_trace_event_periods.py`：從 CUDA trace events 進行 marker-free period detection。
+2. `analysis/high_load_01/run_unified_trace_model.py`：使用偵測結果與 trace-derived features 執行 clean/high-load runtime prediction 評估。
+
+權威流程、輸入輸出及與其他實驗的界線請見 [`PRIMARY_SCENARIO.md`](PRIMARY_SCENARIO.md)。其他 Notebook、GPU-metrics、overhead correction 與跨模型實驗均視為背景、比較、消融或延伸研究。
+
+這個主要情境目前是 RTX 5090 clean/high-load condition prediction，不是 RTX 4090 ↔ RTX 5090 cross-device prediction。
+
 ## 研究範圍
 
 - 硬體：NVIDIA RTX 4090、RTX 5090

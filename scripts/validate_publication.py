@@ -12,6 +12,7 @@ MAX_GIT_FILE_BYTES = 50 * 1024 * 1024
 REQUIRED_PATHS = (
     "README.md",
     "ENVIRONMENT.md",
+    "PRIMARY_SCENARIO.md",
     "REPRODUCIBILITY.md",
     "SOURCE_INVENTORY.md",
     "analysis/README.md",

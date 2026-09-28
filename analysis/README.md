@@ -1,5 +1,14 @@
 # Analysis pipeline
 
+## Primary scenario
+
+The canonical research path is the two-stage CUDA-trace pipeline documented in [`../PRIMARY_SCENARIO.md`](../PRIMARY_SCENARIO.md):
+
+1. `high_load_01/evaluate_trace_event_periods.py` — marker-free period detection from CUDA kernel events.
+2. `high_load_01/run_unified_trace_model.py` — unified clean/high-load runtime prediction evaluation.
+
+The remaining scripts support data preparation, earlier baselines, ablations, reporting, or extension studies unless `PRIMARY_SCENARIO.md` says otherwise.
+
 The scripts preserve raw collection data and write derived tables under
 `analysis_outputs/`. Large Nsight SQLite exports are cached under
 `analysis_cache/nsys/`.

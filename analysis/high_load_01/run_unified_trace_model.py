@@ -1,3 +1,12 @@
+"""PRIMARY SCENARIO — Stage 2: runtime prediction from marker-free trace features.
+
+This is the canonical clean/high-load runtime-model evaluation for the main
+research scenario. It consumes Stage 1 adaptive detections and trace-derived
+features, then writes samples, predictions, metrics, tuning records, and a report.
+
+See PRIMARY_SCENARIO.md for the authoritative two-stage workflow.
+"""
+
 from __future__ import annotations
 
 import argparse

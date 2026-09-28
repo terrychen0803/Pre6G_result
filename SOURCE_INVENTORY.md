@@ -36,7 +36,7 @@ RTX 4090 與 RTX 5090 的 DNN、Gemma 4、ViT source-like files 經 SHA-256 比�
 
 ## 目前發布副本統計
 
-- 479 個檔案
+- 481 個檔案
 - 約 12.55 MB
 - 108 個 Python 程式
 - 10 個 Notebook
